@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="popup.css"/>
+    </head>
+
+    <body style="width: 250px;height: 300px;">
+
+        <div id="water">
+        </div>
+
+        <div id="timer" style="text-align: center;height: 50px;margin-top:50px;">
+            <div style="margin-top:5px;" class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+        </div>
+
+        <div style="margin-top: 20px;font-size: small;text-align: center;">
+            You are <span id="remaining_cups">5</span> cups of water away!
+        </div>
+
+        <div style="text-align: center;">
+            <input id="drankCupBtn" style="outline: none;margin-top:90px;width: 100px;text-align: center;background: black;color: white;border-radius: 0px;" type="button" value="done"/>
+            <br/>
+            <input style="margin-top:10px;width: 100px;text-align: center;" type="button" value="reset"/>
+        </div>
+
+
+
+    </body>
+
+    <script src="popup.js"></script>
+
+</html>

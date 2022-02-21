@@ -1,0 +1,33 @@
+:root{
+  --position_y:0%;
+}
+
+
+#water {
+    position:absolute;
+    bottom: 0px;
+    z-index: -1;
+    width:100%;
+    height:10%;
+    background-image: url("https://priteshgupta.com/demos/fill/waves.png");
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 4s;
+    animation-name:move;
+     
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
+      
+    }
+    
+    @keyframes move {
+      from {
+        background-position:0% var(--position_y);
+      }
+    
+      to {
+        background-position:100% var(--position_y);
+      }
+    }
